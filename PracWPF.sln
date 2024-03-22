@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationDemo", "AnimationD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBADAB24-2B64-4957-A2F0-E3AF00A8A0AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncCommands", "..\AsyncCommands\AsyncCommands.csproj", "{1ED89D44-403B-40E9-BEE9-6FFF34C34922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingShort", "BindingShort\BindingShort.csproj", "{64201DF3-FDE5-4995-9397-91BDA5AC7112}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{AA7661DE-25DD-4E68-AF7B-F487750F2346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA7661DE-25DD-4E68-AF7B-F487750F2346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA7661DE-25DD-4E68-AF7B-F487750F2346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED89D44-403B-40E9-BEE9-6FFF34C34922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED89D44-403B-40E9-BEE9-6FFF34C34922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED89D44-403B-40E9-BEE9-6FFF34C34922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED89D44-403B-40E9-BEE9-6FFF34C34922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64201DF3-FDE5-4995-9397-91BDA5AC7112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64201DF3-FDE5-4995-9397-91BDA5AC7112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64201DF3-FDE5-4995-9397-91BDA5AC7112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64201DF3-FDE5-4995-9397-91BDA5AC7112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
