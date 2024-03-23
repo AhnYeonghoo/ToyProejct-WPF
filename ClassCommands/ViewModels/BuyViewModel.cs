@@ -94,7 +94,7 @@ namespace ClassCommands.ViewModels
             };
 
             CalculatePriceCommand = new CalculatePriceCommand(this, priceService);
-            BuyCommand = new BuyCommand(this, owendItemsStore);
+            BuyCommand = new BuyCommand(this, ownedItemsStore);
         }
     }
 }

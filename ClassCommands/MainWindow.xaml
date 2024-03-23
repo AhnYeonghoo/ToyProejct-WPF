@@ -5,8 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClassCommands"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Class Commands"
+        Width="800"
+        Height="450">
+    <Grid MaxWidth="1000">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="20"
+              DataContext="{Binding BuyViewModel}"
+              Grid.IsSharedSizeScope="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       HorizontalAlignment="Center"
+                       FontSize="28"
+                       Text="Buy" />
+
+            <Grid Grid.Row="1" Margin="0 20 0 0"
+                  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           Text="Item" />
+                <ComboBox Grid.Column="1" Margin="10 0 0 0"
+                          ItemsSource="{Binding BuyableItems}"
+                          SelectedItem="{Binding ItemName}" />
+            </Grid>
+
+            <Grid Grid.Row="2" Margin="0 10 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                    <ColumnDefinition Width="259*" />
+                    <ColumnDefinition Width="54*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" VerticalAlignment="Center"
+                           Text="Quantity" Grid.ColumnSpan="2" Margin="0,0,259,0" />
+                <TextBox Grid.Column="1" Margin="10,0,0,0"
+                         Text="{Binding Quantity, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" />
+            </Grid>
+
+            <StackPanel Grid.Row="3" Margin="0 20 0 0"
+                        Orientation="Horizontal">
+                <Button Padding="10 5" Command="{Binding BuyCommand}"
+                        Content="Buy" />
+                <Button Margin="10 0 0 0" Padding="10 5"
+                        Command="{Binding CalculatePriceCommand}"
+                        Content="Calculate Price" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Margin="0 20 0 0"
+                        Orientation="Horizontal">
+                <TextBlock Foreground="Green" Text="{Binding StatusMessage}" />
+                <TextBlock Foreground="Red" Text="{Binding ErrorMessage}" />
+            </StackPanel>
+                        
+        </Grid>
 
     </Grid>
 </Window>

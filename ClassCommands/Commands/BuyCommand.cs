@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using ClassCommands.ViewModels;
+using ClassCommands.Stores;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
