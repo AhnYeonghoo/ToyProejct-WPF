@@ -40,6 +40,8 @@
                             <TextBlock Grid.Column="1" Text="..." />
                         </Grid>
                     </DataTemplate>
+                    
+                    
                 </ListView.ItemTemplate>
             </ListView>
         </Border>
