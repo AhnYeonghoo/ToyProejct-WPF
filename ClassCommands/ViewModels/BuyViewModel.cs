@@ -16,6 +16,7 @@ namespace ClassCommands.ViewModels
     public class BuyViewModel : ViewModelBase, ICalculatePriceViewModel
     {
         public IEnumerable<string> BuyableItems { get; }
+
         private string _itemName;
         public string ItemName
         {
@@ -61,7 +62,7 @@ namespace ClassCommands.ViewModels
             set
             {
                 _statusMessage = value;
-                OnPropertyChanged(nameof(StatueMessage));
+                OnPropertyChanged(nameof(StatusMessage));
             }
         }
 

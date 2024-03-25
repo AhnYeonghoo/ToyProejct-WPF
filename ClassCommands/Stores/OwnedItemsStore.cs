@@ -11,7 +11,7 @@ namespace ClassCommands.Stores
     {
         private readonly List<OwnedItem> _ownedItems;
         public IEnumerable<OwnedItem> OwnedItems => _ownedItems.Where(i => i.Quantity > 0);
-        public event Action OwneItemsChanged;
+        public event Action OwnedItemsChanged;
 
         public OwnedItemsStore()
         {

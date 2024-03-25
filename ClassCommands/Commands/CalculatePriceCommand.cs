@@ -3,6 +3,7 @@ using ClassCommands.Exceptions;
 using ClassCommands.Stores;
 using ClassCommands.Services;
 using System.Collections.Generic;
+using ClassCommands.ViewModels;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -16,10 +17,10 @@ namespace ClassCommands.Commands
         private readonly ICalculatePriceViewModel _viewModel;
         private readonly IPriceService _priceService;
 
-        public CalcualtePriceCommand(ICalculatePriceViewModel viewModel, IPriceService priceService)
+        public CalculatePriceCommand(ICalculatePriceViewModel viewModel, IPriceService priceService)
         {
             _viewModel = viewModel;
-            _priceService = _priceService;
+            _priceService = priceService;
             _viewModel.PropertyChanged += ViewModel_PropertyChanged;
         }
 
