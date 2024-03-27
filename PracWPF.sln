@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncCommands", "..\AsyncCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingShort", "BindingShort\BindingShort.csproj", "{64201DF3-FDE5-4995-9397-91BDA5AC7112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassCommands", "ClassCommands\ClassCommands.csproj", "{8564DC0F-C67B-42BA-8B09-630F8D7A9A8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassCommands", "ClassCommands\ClassCommands.csproj", "{8564DC0F-C67B-42BA-8B09-630F8D7A9A8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionViewMVVM", "CollectionViewMVVM\CollectionViewMVVM.csproj", "{3EE798CF-F125-49AC-8B48-A7FDE73F21AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationMVVM", "CommunicationMVVM\CommunicationMVVM.csproj", "{17A82FCB-857C-41F7-9891-2B8FDEF2D557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalRendering", "ConditionalRendering\ConditionalRendering.csproj", "{DECA7263-BC86-49EB-ABD5-3190D3EDF1D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,18 @@ Global
 		{8564DC0F-C67B-42BA-8B09-630F8D7A9A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8564DC0F-C67B-42BA-8B09-630F8D7A9A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8564DC0F-C67B-42BA-8B09-630F8D7A9A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE798CF-F125-49AC-8B48-A7FDE73F21AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE798CF-F125-49AC-8B48-A7FDE73F21AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE798CF-F125-49AC-8B48-A7FDE73F21AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE798CF-F125-49AC-8B48-A7FDE73F21AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A82FCB-857C-41F7-9891-2B8FDEF2D557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A82FCB-857C-41F7-9891-2B8FDEF2D557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A82FCB-857C-41F7-9891-2B8FDEF2D557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A82FCB-857C-41F7-9891-2B8FDEF2D557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECA7263-BC86-49EB-ABD5-3190D3EDF1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECA7263-BC86-49EB-ABD5-3190D3EDF1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECA7263-BC86-49EB-ABD5-3190D3EDF1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECA7263-BC86-49EB-ABD5-3190D3EDF1D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

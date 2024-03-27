@@ -1,6 +1,7 @@
 ﻿using CommunicationMVVM.Stores;
 using System;
 using System.Collections.Generic;
+using CommunicationMVVM.Models;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace CommunicationMVVM.ViewModels
         private readonly ObservableCollection<ProductViewModel> _products;
 
         public IEnumerable<ProductViewModel> Products => _products;
-        public bool HasPRoducts => _products.Count > 0;
+        public bool HasProducts => _products.Count > 0;
         public bool HasNoProducts => !HasProducts;
 
         public ProductListingViewModel(ProductStore productStore)

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CollectionViewMVVM.VIewModels
+namespace CollectionViewMVVM.ViewModels
 {
     public class EmployeeViewModel : ViewModelBase
     {
