@@ -62,8 +62,8 @@ namespace CollectionViewMVVM.VIewModels
             yield return new EmployeeViewModel("Abby", "Web Developer");
             yield return new EmployeeViewModel("Frank", "Construction Worker");
             yield return new EmployeeViewModel("Kate", "Cashier");
-            yield return new EmployeeViewMode("Adam", "Doctor");
-            yield return new EmployeeViewMode("Mary", "Doctor");
+            yield return new EmployeeViewModel("Adam", "Doctor");
+            yield return new EmployeeViewModel("Mary", "Doctor");
             yield return new EmployeeViewModel("Tony", "Guitar Player");
         }
     }
